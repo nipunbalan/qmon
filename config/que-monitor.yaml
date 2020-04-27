@@ -1,0 +1,17 @@
+version: "2.0"
+
+device:
+  id: "E1"
+  name: "RPi3"
+
+telemetry:
+  port: 8080
+  path: "/qlen"
+
+messaging:
+  protocol: mqtt
+  data_topic: sensordata
+  command_topic: command1
+  broker: pilab-01:1883
+  dataratereadseconds: 10
+
